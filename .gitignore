@@ -1,0 +1,9 @@
+### IDE ###
+.idea/
+
+### NodeJS ###
+node_modules/
+
+# Logs #
+logs/
+*.log
