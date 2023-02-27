@@ -1,0 +1,21 @@
+### IntelliJ IDEA ###
+target/
+out/
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### NodeJS ###
+node_modules/
+
+### Visual Studio ###
+.vs/
+x64/
+x86/
+*.sln
+*.filters
+*.user
+
+# Logs #
+logs/
