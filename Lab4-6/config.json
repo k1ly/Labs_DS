@@ -1,0 +1,56 @@
+{
+  "replicationInterval": 10000,
+  "port": 5000,
+  "main": {
+    "address": "127.0.0.1",
+    "connectionConfig": {
+      "user": "sa",
+      "password": "Kirill1203",
+      "server": "127.0.0.1",
+      "database": "ds_main",
+      "trustServerCertificate": true
+    }
+  },
+  "services": {
+    "1": {
+      "address": "127.0.0.2",
+      "connectionConfig": {
+        "user": "sa",
+        "password": "Kirill1203",
+        "server": "127.0.0.1",
+        "database": "ds_service1",
+        "trustServerCertificate": true
+      }
+    },
+    "2": {
+      "address": "127.0.0.3",
+      "connectionConfig": {
+        "user": "sa",
+        "password": "Kirill1203",
+        "server": "127.0.0.1",
+        "database": "ds_service2",
+        "trustServerCertificate": true
+      }
+    }
+  },
+  "log": {
+    "appenders": {
+      "file": {
+        "type": "file",
+        "filename": "logs/replication.log"
+      },
+      "console": {
+        "type": "console"
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": [
+          "file",
+          "console"
+        ],
+        "level": "debug"
+      }
+    }
+  }
+}

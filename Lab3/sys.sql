@@ -1,0 +1,1 @@
+alter pluggable database lke_pdb open;

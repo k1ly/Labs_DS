@@ -1,0 +1,41 @@
+{
+  "coordinatorVotingTimeout": 500,
+  "coordinatorCheckInterval": 5000,
+  "coordinatorCheckAttempt": 3,
+  "port": 5555,
+  "broadcast": "127.255.255.255",
+  "dispatcher": {
+    "address": "127.0.0.1"
+  },
+  "services": {
+    "1": {
+      "address": "127.0.0.2"
+    },
+    "2": {
+      "address": "127.0.0.3"
+    },
+    "3": {
+      "address": "127.0.0.4"
+    }
+  },
+  "log": {
+    "appenders": {
+      "file": {
+        "type": "file",
+        "filename": "logs/coordinator.log"
+      },
+      "console": {
+        "type": "console"
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": [
+          "file",
+          "console"
+        ],
+        "level": "debug"
+      }
+    }
+  }
+}
